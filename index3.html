@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>event loop</title>
+</head>
+<body>
+
+    <script>
+        setTimeout(function timer(){
+            console.log('you clicked the button!');
+        } , 2000);
+
+        console.log("hi !");
+
+        setTimeout(function timeout(){
+            console.log('you clicked the button!');
+        } , 5000);
+
+        console.log("Welcome to loupe.");
+
+
+    </script>
+    
+</body>
+</html>
