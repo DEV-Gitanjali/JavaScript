@@ -33,7 +33,7 @@
 
 let number=[12,234,45,56,978,87,87,65,84,24]
 let deletevalues= number.splice(2,3,1022,1023,1024,)
-// console.log(num)
+console.log(number)
 console.log(deletevalues)
 
 // let newnumber= number.slice(3,5)
