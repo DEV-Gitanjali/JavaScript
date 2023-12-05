@@ -1,13 +1,13 @@
 // map filter and reduced
 
-// let arr=[12,34,56]
+let arr=[45,23,21]
 
-// let a= arr.map((value,index,array)=>{
+let a= arr.map((value,index,array)=>{
 
-//     return value + index
-// })
+    return value + array
+})
 
-// console.log(arr)
+console.log(a)
 
 // // array filter method
 
@@ -20,12 +20,12 @@
 
 // Array reduce method
 
-let arr3=[1,2,3,4,5,2,1]
+// let arr3=[1,2,3,4,5,2,1]
 
-const reduce_func=(h1,h2)=>{
-    return h1+h2
-}
+// const reduce_func=(h1,h2)=>{
+//     return h1+h2
+// }
 
-let newarr3=arr3.reduce(reduce_func)
+// let newarr3=arr3.reduce(reduce_func)
 
-console.log(newarr3)
+// console.log(newarr3)
