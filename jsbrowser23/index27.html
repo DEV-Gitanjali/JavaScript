@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>alert prompt confirm</title>
+    <style>
+
+    </style>
+</head>
+<body>
+
+    helloworld
+    <script>
+       alert("Enter the value of a !")
+
+       let a =prompt("Enter a here " , "345")
+       a=Number.parseInt(a)
+       alert("you entered a of type " + (typeof  a))
+
+       let write =confirm("do you want to write it to the page")
+
+       if(write){
+        document.write(a)
+       }
+
+       else{
+        document.write("plz allow me to write")
+       }
+
+    </script>
+</body>
+</html>
