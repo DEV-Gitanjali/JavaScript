@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         const sleep = async (seconds) => {
+        return new Promise((resolve, reject) => {
+                setTimeout(() => { resolve(true) }, seconds * 1000)
+        })
+}
+
+const showHack = async (message) => {
+        await sleep(2)
+        console.log(message)
+        text.innerHTML = text.innerHTML + message + "<br>"
+}
+
+(async () => {
+        for (let i = 0; i < a.length; i++) {
+                await showHack(a[i])
+        }
+})()
+    </script>
+</body>
+</html>
