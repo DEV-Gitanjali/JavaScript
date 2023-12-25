@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        // const sayHello= name =>{
+        //     console.log("greeting" + " "  + name)
+        //     console.log("hii")
+        // }
+
+        // sayHello("harry" , "good morinig")
+
+        const x={
+            name:"harry",
+            role:"js developer",
+            exp:30,
+
+            show: function() {
+                let that=this
+                console.log(this)
+
+            
+
+            setTimeout(()=>{
+
+                console.log(`this name is ${this.name} \n this role is ${this.role}`)
+            },2000)
+
+        }
+            
+        }
+
+
+        // console.log(x.name , x.exp)
+        // console.log(x)
+
+        x.show()
+
+
+        
+    </script>
+    
+</body>
+</html>
