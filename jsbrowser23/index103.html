@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Break & continue </title>
+</head>
+<body>
+    <script>
+        const inputs=[
+            11,23,45,67,89,78,56,45,23,78,90,23,56,78,];
+
+            const evenNumbers=[];
+        
+            for(let i of inputs)
+            {
+                if(i%2!==0)
+                {
+                    continue;
+                }
+
+                console.log(i)
+                
+                evenNumbers.push(i);
+                
+                if(evenNumbers.length==5)
+                {
+                    break;
+                }
+
+                console.log(evenNumbers);
+            }
+
+    </script>
+</body>
+</html>
