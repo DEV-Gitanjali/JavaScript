@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rest Spread Operator</title>
+</head>
+<body>
+    <script>
+        const AprilBatch=['subham' ,'bidu', 'chikku', 'satya'];
+        const MaylBatch=['subha' ,'gitu', 'surya', 'sradha'];
+        const junlBatch=['pusha' ,'prahalada', 'bikash', 'raghu'];
+        const julylBatch=[];
+
+// function addStudent(batch,student)
+// {
+//     batch.push(student);
+//     console.log(batch);
+// }
+
+// addStudent(AprilBatch, 'shreyansh');
+// addStudent(MaylBatch, 'shreyanshi');
+
+function addStudents(batch,...students)
+{
+    for(let i of students)
+    {
+        batch.push(i);
+    }
+    console.log(batch)
+}
+
+addStudents(AprilBatch, 'pabitra', 'sabitri');
+
+
+
+
+
+
+    </script>
+</body>
+</html>
