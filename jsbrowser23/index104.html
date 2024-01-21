@@ -8,9 +8,9 @@
 <body>
     <script>
         const AprilBatch=['subham' ,'bidu', 'chikku', 'satya'];
-        const MaylBatch=['subha' ,'gitu', 'surya', 'sradha'];
-        const junlBatch=['pusha' ,'prahalada', 'bikash', 'raghu'];
-        const julylBatch=[];
+        const MayBatch=['subha' ,'gitu', 'surya', 'sradha'];
+        const junBatch=['pusha' ,'prahalada', 'bikash', 'raghu'];
+        const julyBatch=[];
 
 // function addStudent(batch,student)
 // {
@@ -32,7 +32,16 @@ function addStudents(batch,...students)
 
 addStudents(AprilBatch, 'pabitra', 'sabitri');
 
+// spread ....
+// expanding & coping an array
 
+const newBatch=[...MayBatch];
+
+console.log(newBatch);
+
+MayBatch.push('newStudent');
+console.log(MayBatch);
+console.log(newBatch);
 
 
 
