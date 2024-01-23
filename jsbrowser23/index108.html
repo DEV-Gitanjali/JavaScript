@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scope chaining</title>
+</head>
+<body>
+    <script>
+        var a=10;
+        let  b=20;
+        const c=30
+
+ function print(){
+    var a='ten';
+    let b='twenty';
+
+    console.log('**** inside print function****')
+    console.log(a,b,c);
+    console.log('******')
+
+    function innerPrint(){
+        var a='inner10' ;
+
+        console.log('* inside innerPrint Functions**');
+        console.log(a,b,c);
+    }
+
+    innerPrint();
+ }
+
+ console.log(a,b,c);
+ print();
+
+ 
+
+
+    </script>
+</body>
+</html>
