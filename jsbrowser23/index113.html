@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> function returning functions</title>
+</head>
+<body>
+    
+    <script>
+        function greet(message){
+            return function (wishes){
+                console.log(`${wishes}, ${message}`);
+            };
+        }
+
+        // const greeting=greet(' i hope you are doing well');
+        // greeting('hello');
+
+        greet('welcome to the session')('hii');
+    </script>
+</body>
+</html>
