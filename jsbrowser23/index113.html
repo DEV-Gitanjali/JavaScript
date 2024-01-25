@@ -3,21 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> function returning functions</title>
+    <title> function</title>
 </head>
 <body>
     
     <script>
-        function greet(message){
-            return function (wishes){
-                console.log(`${wishes}, ${message}`);
-            };
-        }
+        // function return function
+        // function greet(message){
+        //     return function (wishes){
+        //         console.log(`${wishes}, ${message}`);
+        //     };
+        // }
 
-        // const greeting=greet(' i hope you are doing well');
-        // greeting('hello');
+        // // const greeting=greet(' i hope you are doing well');
+        // // greeting('hello');
 
-        greet('welcome to the session')('hii');
+        // greet('welcome to the session')('hii');
+
+// higher order function
+const inputs=[2,3,4,5,6,7,8,9];
+
+// function square(input){
+//     const squared=[];
+//     for(let num of input){
+//         squared.push(num* num);
+//     }
+
+//     return squared;
+// }
+
+// function cubic (input){
+//     const cubes =[];
+//     for(let num of input){
+//         cubes.push(num* num *num);
+//     }
+
+//     return cubes;
+// }
+
+// console.log(square(inputs));
+// console.log(cubic(inputs));
+
+// // 
+
+function operation(input,fn){
+    const output=[];
+    for(let num of input){
+        output.push(fn(num));
+    }
+
+    return output;
+
+}
+
+function square(number){
+    return number*number;
+}
+
+function cube(number){
+    return number*number*number;
+}
+
+console.log(operation(inputs,square));
+console.log(operation(inputs,cube));
+
+
+
+
+
+
+
+
     </script>
 </body>
 </html>
