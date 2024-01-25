@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>immediately invoked function expressions</title>
+</head>
+<body>
+    <script>
+        // (function(){
+        //     console.log('subham_Kumar_Pradhan');
+        // })();
+
+        // (function(a,b){
+        //     console.log(a**b);
+        // })(4,2);
+
+        const user=(function(){
+            const userData={
+                userName :'john',
+                userAge:20,
+            };
+
+            function getName(){
+                console.log(userData.userName);
+            }
+
+            function updateAge(age){
+                console.log(userData.userAge+age)
+            }
+
+            return{getName,updateAge};
+        })();
+
+        console.log(user);
+        user.getName();
+        user.updateAge(3);
+
+
+
+    </script>
+</body>
+</html>
