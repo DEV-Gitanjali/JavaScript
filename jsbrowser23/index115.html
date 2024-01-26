@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <script>
+        // map
+
+        const input=[2,34,6,8,9];
+
+        // const squareArray=input.map(function(currentElement)
+        // {
+        //     return currentElement * currentElement;
+        // });
+        
+
+// reduce
+// reduce (redFn,initial value);
+// function redFn(accumulator,currentValue,currentIndex,arr);
+ 
+
+  const inputs=[2,3,4,5,6,10];
+
+  const sum=inputs.reduce((total,num,index)=>{
+    console.log(total,index);
+    return total + num;
+  });
+
+  console.log(sum);
+
+
+
+
+
+
+
+
+
+
+        
+        const squareArray=input.map((num)=> num* num);
+        console.log(squareArray);
+
+
+
+    </script>
+</body>
+</html>

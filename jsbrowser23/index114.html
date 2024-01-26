@@ -1,0 +1,42 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>curring function</title>
+ </head>
+ <body>
+     <script>
+        function add1(a,b,c){
+            return a+b+c;
+        }
+
+        console.log(add1(2,3,4));
+
+
+        
+        function add2(a){
+                return function(b){
+                    return function(c){
+                        return a+b+c;
+                    };
+                };
+            
+        }
+        console.log(add2(2)(3)(4));
+
+        // ......
+        function power(b){
+            return function(a){
+                return a**b;
+            }
+        }
+
+        const square=power(2);
+        console.log(square);
+
+        console.log(square(4));
+
+     </script>
+ </body>
+ </html>
