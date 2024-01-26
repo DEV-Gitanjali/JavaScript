@@ -22,14 +22,31 @@
 // function redFn(accumulator,currentValue,currentIndex,arr);
  
 
-  const inputs=[2,3,4,5,6,10];
+//   const inputs=[2,3,4,5,6,10];
 
-  const sum=inputs.reduce((total,num,index)=>{
-    console.log(total,index);
-    return total + num;
-  });
+//   const sum=inputs.reduce((total,num,index)=>{
+//     console.log(total,index);
+//     return total + num;
+//   });
 
-  console.log(sum);
+//   console.log(sum);
+
+//    filter
+
+const inputs=[4,10,3,5,-6,-9,-4,-5];
+
+// const positives=inputs.filter(noNegative);
+
+// function  noNegative(num){
+//     return num >0;
+// }
+
+// console.log(`original Array: ${inputs}`);
+// console.log(`only positive number:${positives}`);
+
+const negatives=inputs.filter((num)=>num<0);
+
+console.log(negatives);
 
 
 
