@@ -68,12 +68,12 @@
 
 // object destructuring
 
-const obj = {
-    a:1,
-    b:2, 
-    c:['0','b','j'],
-    d:{value: 'val'},
-};
+// const obj = {
+//     a:1,
+//     b:2, 
+//     c:['0','b','j'],
+//     d:{value: 'val'},
+// };
 
 // // Binding pattern
 // const {a,b,c,d} = obj;
@@ -87,10 +87,34 @@ const obj = {
 
 
 // assign pattern
-let b;
-({b:b}=obj);
-console.log(b);
+// let b;
+// ({b:b}=obj);
+// console.log(b);
 
+// array destructuring
+const fruits=[
+    'Apple',
+    'mango',
+    'berry',
+    'banana',
+    'lichi',
+];
+
+// binding pattern
+
+// const [a,m]=fruits;
+// console.log(a,m);
+
+
+// const [a, , , k] = fruits;
+// console.log(a, k);
+
+
+// const [a , m , ...f] = fruits ;
+// console.log(f);
+
+const [a, m ... [be, ba ]] = fruits;
+console.log(ba);
 
 
 
