@@ -9,22 +9,38 @@
     <script>
         // constructor function
 
-        function Movie(tittle,year)
-        {
-            this.tittle=tittle;
-            this.year=year;
+        // function Movie(tittle,year)
+        // {
+        //     this.tittle=tittle;
+        //     this.year=year;
             
-            this.getDetails=function(){
-                console.log(`Tittle:${this.tittle}
-                year:${this.year}`);
-            };
-        }
+        //     this.getDetails=function(){
+        //         console.log(`Tittle:${this.tittle}
+        //         year:${this.year}`);
+        //     };
+        // }
 
-        // new keyword
-        const movie2 = new Movie('Avatar' , 2013);
+        // // new keyword
+        // const movie2 = new Movie('Avatar' , 2013);
 
-        console.log(movie2);
-        movie2.getDetails();
+        // console.log(movie2);
+        // movie2.getDetails();
+
+        // // prototype chain
+
+        // create object
+        const car={
+            getDetails(name){
+
+                console.log(`your car is ${name}`);
+
+            },
+        };
+
+        const car1=Object.create(car);
+
+        console.log(car1.__proto__);
+        car1.getDetails('subham');
 
     </script>
 </body>
