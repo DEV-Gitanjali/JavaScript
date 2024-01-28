@@ -29,18 +29,73 @@
         // // prototype chain
 
         // create object
-        const car={
-            getDetails(name){
+        // const car={
+        //     getDetails(name){
 
-                console.log(`your car is ${name}`);
+        //         console.log(`your car is ${name}`);
 
-            },
-        };
+        //     },
+        // };
 
-        const car1=Object.create(car);
+        // const car1=Object.create(car);
 
-        console.log(car1.__proto__);
-        car1.getDetails('subham');
+        // console.log(car1.__proto__);
+        // car1.getDetails('subham');
+
+        // object call & blind method
+
+//         const car ={
+//             name:'car',
+//             color:'black',
+//             getDetails(brand, seats) {
+
+//                 console.log(`this is a ${this.color} ${this.name} of ${brand} company . it has ${seats} seats`);
+
+//             } ,
+//         }
+
+//         const bus = {
+//             name: 'bus' ,
+//             color:'black'
+//         };
+
+// car.getDetails('Audi' ,5);
+// car.getDetails.call(bus , 'star' ,50);
+// car.getDetails.apply(bus, ['gold' , 30]);
+
+// const vehicle= car.getDetails.bind(bus);
+// vehicle('silver' , 20);
+
+// object destructuring
+
+const obj = {
+    a:1,
+    b:2, 
+    c:['0','b','j'],
+    d:{value: 'val'},
+};
+
+// // Binding pattern
+// const {a,b,c,d} = obj;
+// console.log(a);
+// console.log(c);
+
+// const {a:a1} = obj;
+
+// console.log(a1);
+// console.log(a);
+
+
+// assign pattern
+let b;
+({b:b}=obj);
+console.log(b);
+
+
+
+
+
+
 
     </script>
 </body>
