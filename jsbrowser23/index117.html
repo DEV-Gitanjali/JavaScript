@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>class in js </title>
+</head>
+<body>
+    <script>
+        
+        class VehicleCl{
+            // private properties
+            #regNumber;
+
+            // constructor
+
+            constructor(name,color,wheels,number){
+                this.name=name;
+                this.color=color;
+                this.wheels=wheels;
+                this.#regNumber = number;
+            }
+
+            // private method
+            #getNumber(number){
+                return number;
+            }
+
+            // methods
+
+            getDetails(){
+                console.log(`the ${this.name} is ${this.color} in color. it has ${this.wheels} wheels. registration Number is : ${this.#regNumber}`);
+
+
+            }
+        }
+
+        const veh1=new VehicleCl('scooter' ,'grey' , 2);
+        console.log(veh1);
+
+        veh1.name='car';
+        veh1.getDetails();
+    </script>
+</body>
+</html>

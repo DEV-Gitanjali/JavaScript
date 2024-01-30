@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <script>
+   
+//    class Vehicle{
+//     // constructor
+//     constructor(name,color,wheels){
+//         this.name = name;
+//         this .color = color;
+//         this.wheels = wheels;
+//     }
+
+//     // methods
+
+//     getDetaails(){
+//         console.log(`the ${this.name} is ${this.color} in color .
+//         it has ${this.wheels} wheels .`)
+//     }
+
+//     // static method
+
+//     // getter & setter
+
+    class Circle{
+        constructor(radius)
+        {
+            this.radius = radius ;
+        }
+
+        get diameter(){
+            return this.radius * 2
+        }
+    //     getDiameter(){
+    //         console.log(this.radius * 2);
+    //     }
+    }
+
+    const circle = new Circle(4);
+    console.log(circle.radius);
+
+    // circle.getDiameter();
+
+    console.log(circle.diameter);
+
+    circle.radius = 6;
+    console.log(circle.diameter);
+    
+
+
+   
+
+
+    </script>
+</body>
+</html>
