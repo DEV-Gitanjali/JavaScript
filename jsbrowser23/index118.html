@@ -27,47 +27,64 @@
 
 //     // getter & setter
 
-    class Circle{
-        constructor(radius)
-        {
-            this.radius = radius ;
-        }
-
-        get diameter(){
-            return this.radius * 2
-        }
-    //     getDiameter(){
-    //         console.log(this.radius * 2);
+    // class Circle{
+    //     constructor(radius)
+    //     {
+    //         this.radius = radius ;
     //     }
-       set diameter(newDiameter)
-       {
 
-        if(newDiameter >=0){
-            this.radius = newDiameter/2 ;
-        }
+    //     get diameter(){
+    //         return this.radius * 2
+    //     }
+    // //     getDiameter(){
+    // //         console.log(this.radius * 2);
+    // //     }
+    //    set diameter(newDiameter)
+    //    {
 
-        else{
-            console.log("invalid input")
-        }
+    //     if(newDiameter >=0){
+    //         this.radius = newDiameter/2 ;
+    //     }
+
+    //     else{
+    //         console.log("invalid input")
+    //     }
         
 
-       }
-    }
+    //    }
+    // }
 
-    const circle = new Circle(4);
-    console.log(circle.radius);
+    // const circle = new Circle(4);
+    // console.log(circle.radius);
 
-    // circle.getDiameter();
+    // // circle.getDiameter();
 
-    console.log(circle.diameter);
+    // console.log(circle.diameter);
 
-    circle.radius = 6;
-    console.log(circle.diameter);
+    // circle.radius = 6;
+    // console.log(circle.diameter);
 
-    circle.diameter = 20 ;
-    console.log(circle.radius);
-    console.log(circle.diameter);
-    circle.diameter = -2 ;
+    // circle.diameter = 20 ;
+    // console.log(circle.radius);
+    // console.log(circle.diameter);
+    // circle.diameter = -2 ;
+
+    // built in class 
+    const today = new Date();
+    console.log(today);
+
+    const birthDate = new Date('1999-06-12');
+    console.log(birthDate);
+
+    const someDay = new Date(1990, 07);
+    console.log(someDay);
+
+console.log(birthDate.getFullYear());
+console.log(birthDate.toDateString());
+const birthStr = birthDate.toString();
+
+console.log(birthStr.slice(11,20));
+
 
 
    
