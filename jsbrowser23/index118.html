@@ -70,22 +70,52 @@
     // circle.diameter = -2 ;
 
     // built in class 
-    const today = new Date();
-    console.log(today);
+//     const today = new Date();
+//     console.log(today);
 
-    const birthDate = new Date('1999-06-12');
-    console.log(birthDate);
+//     const birthDate = new Date('1999-06-12');
+//     console.log(birthDate);
 
-    const someDay = new Date(1990, 07);
-    console.log(someDay);
+//     const someDay = new Date(1990, 07);
+//     console.log(someDay);
 
-console.log(birthDate.getFullYear());
-console.log(birthDate.toDateString());
-const birthStr = birthDate.toString();
+// console.log(birthDate.getFullYear());
+// // console.log(birthDate.toDateString());
+// const birthStr = birthDate.toString();
 
-console.log(birthStr.slice(11,20));
+// console.log(birthStr.slice(11,20));
 
 
+// json
+
+
+// shallow copy
+
+const user1 = {
+     username :'sara' ,
+     age: 12,
+};
+
+const  user2 = {...user1};
+
+console.log(user2);
+console.log(user1);
+
+user2.username='Harry';
+console.log(user2);
+console.log(user1);
+
+// object assign
+
+const user2 = object.assign({} , user1);
+console.log(user2);
+console.log(user1);
+
+user2.username = '  Harry';
+console.log(user2);
+console.log(user1);
+
+  
 
    
 
