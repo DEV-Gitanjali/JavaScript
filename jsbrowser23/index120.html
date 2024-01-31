@@ -6,10 +6,12 @@
     <title>Asynchronous</title>
 </head>
 <body>
-    <h2>Time out </h2>
-    <button class="button" >Click here</button>
+    <!-- <h2>Time out </h2> -->
+    <!-- <button class="button" >Click here</button> -->
 
-    <h3 id="text"></h3>
+    <!-- <h3 id="text"></h3> -->
+
+    <h2>Set time interval</h2>
 
 
 
@@ -17,18 +19,42 @@
 
 
     <script>
-        const buttonElement = document.querySelector('button');
+        // const buttonElement = document.querySelector('button');
         const textElement = document.querySelector('#text');
-
-        buttonElement.addEventListener('click' , () =>{
-            textElement.textContent = 'Button is pressed';
+         
+        // buttonElement.addEventListener('click' , () =>{
+        //     textElement.textContent = 'Button is pressed';
         
 
-        setTimeout(()=>{
-            textElement.textContent = '';
+        // setTimeout(()=>{
+        //     textElement.textContent = '';
+        // },1000);
+
+        let seconds=0;
+        textElement.textContent = `${seconds}`;
+
+      const timer =  setInterval(()=>{
+    seconds++ ;
+    textElement.textContent = `${seconds}`;
+
+    if(seconds >=5){
+        clearInterval(timer);
+    }
         },1000);
 
-        });
+        // });
+
+// set intervall
+
+
+
+
+
+
+
+
+
+
 
     </script>
 </body>
