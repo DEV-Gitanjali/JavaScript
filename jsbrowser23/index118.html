@@ -89,31 +89,53 @@
 // json
 
 
+
 // shallow copy
 
 const user1 = {
      username :'sara' ,
      age: 12,
+
+     marks :{
+        maths:20,
+        eng:25,
+     },
+
+     getMarks(){
+        console.log(this.marks);
+     } ,
 };
 
-const  user2 = {...user1};
+// const  user2 = {...user1};
+
+// console.log(user2);
+// console.log(user1);
+
+// user2.username='Harry';
+// console.log(user2);
+// console.log(user1);
+
+// // object assign
+
+// const user2 = object.assign({} , user1);
+// console.log(user2);
+// console.log(user1);
+
+// user2.username = '  Harry';
+// console.log(user2);
+// console.log(user1);
+
+// deep copy
+
+const user2 = JSON.parse(JSON.stringify(user1));
+user2.username='harry';
+user2.marks.maths = 10 ;
 
 console.log(user2);
 console.log(user1);
 
-user2.username='Harry';
-console.log(user2);
-console.log(user1);
 
-// object assign
 
-const user2 = object.assign({} , user1);
-console.log(user2);
-console.log(user1);
-
-user2.username = '  Harry';
-console.log(user2);
-console.log(user1);
 
   
 
